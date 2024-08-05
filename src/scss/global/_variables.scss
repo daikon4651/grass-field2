@@ -1,0 +1,61 @@
+// 変数
+
+
+// 可
+  // -（ ハイフン ）
+  // _（ アンダースコア・アンダーバー ）
+  // マルチバイト文字（ 日本語 ）
+
+
+// 不可
+  // 数字を先頭にできない。
+  // 連続した -（ ハイフン ）から始まっている名前。
+
+
+
+
+// カラー
+$baseColor: #EAF5E9;
+$mainColor: #37952F;
+$accentColor: #FF7600;
+$blackColor: #333333;
+$whiteColor: #FFFFFF;
+$textColor: $blackColor;
+
+
+
+
+// フォント
+$NotoSans: "Noto Sans JP", sans-serif;
+$Oswald: "Oswald", sans-serif;
+
+
+
+
+
+// 幅
+// $width: ;
+
+
+
+
+// サイズ
+
+
+
+
+// ブレイクポイント・ブレークポイント
+$breakpoints: (
+  'xs-min': '(min-width: 375px), print',
+  'xs-max': '(max-width: 374px), print',
+  'sm-min': '(min-width: 576px), print',
+  'sm-max': '(max-width: 575px), print',
+  'md-min': '(min-width: 768px), print',
+  'md-max': '(max-width: 767px), print',
+  'lg-min': '(min-width: 992px), print',
+  'lg-max': '(max-width: 991px), print',
+  'xl-min': '(min-width: 1200px), print',
+  'xl-max': '(max-width: 1199px), print',
+  'xxl-min': '(min-width: 1366px), print',
+  'xxl-max': '(max-width: 1365px), print'
+);
