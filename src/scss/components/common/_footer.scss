@@ -1,0 +1,72 @@
+// 共通・フッター
+
+
+// 変数、ミックスイン、関数
+@use "../../global" as g;
+
+
+.footer {
+  padding-inline: 20px;
+  background-color: #333;
+  color: g.$whiteColor;
+
+  &__nav {
+
+    &Item {
+      border-bottom: solid 1px #707070;
+    }
+
+    &Link {
+      display: block;
+      padding: 1em 20px;
+      color: g.$whiteColor;
+      @include g.rem-fz(14);
+      font-weight: 700;
+      text-decoration-line: none;
+    }
+  }
+
+  &__copyright {
+    padding-block: 40px;
+    text-align: center;
+
+    &Text {
+      @include g.rem-fz(14);
+      font-weight: 500;
+    }
+  }
+
+
+  @include g.mq() {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__nav {
+
+      &List {
+        border-right: solid 1px #707070;
+        display: flex;
+      }
+
+      &Item {
+        border-bottom: none;
+        border-left: solid 1px #707070;
+      }
+
+      &Link {
+        padding: 0 1em;
+
+        @include g.hover {
+          text-decoration-line: underline;
+          text-underline-position: under;
+        }
+      }
+    }
+
+    &__copyright {
+      padding-block: 0;
+    }
+  }
+}

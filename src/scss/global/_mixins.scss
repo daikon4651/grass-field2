@@ -60,6 +60,16 @@
 
 
 
+// マウスオーバー
+@mixin hover {
+  &:hover {
+    @content;
+  }
+}
+
+
+
+
 // マウスオーバー、フォーカス
 @mixin hover-focus {
   &:hover,

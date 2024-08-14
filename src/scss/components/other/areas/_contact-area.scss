@@ -1,0 +1,30 @@
+// エリア・お問合わせ
+
+
+@use "../../../global/" as g;
+
+
+.contactArea {
+  padding: 50px 20px;
+  background-color: g.$mainColor;
+  color: g.$whiteColor;
+  text-align: center;
+
+  &__text {
+    @include g.rem-fz(14);
+  }
+
+  &__tel {
+    display: block;
+    font-family: g.$Oswald;
+    @include g.rem-fz(24);
+    font-weight: 500;
+
+    &Num {
+      margin-inline-start: 5px;
+      color: g.$whiteColor;
+      @include g.rem-fz(40);
+      text-decoration-line: none;
+    }
+  }
+}

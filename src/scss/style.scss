@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+/* CSSカスタムプロパティ・CSS変数・カスケード変数 */
+@use "./settings/_variables.scss";
+
+
+
+
+/* ベース */
+@use "./bases/bases.scss";
+
+
+
+
+/* コンポーネント・パーツ */
+
+// 見出し
+@use "./components/parts/_headings";
+
+
+
+
+/* コンポーネント・共通 */
+
+// フッター
+@use "components/common/_footer";
+
+
+
+
+/* コンポーネント・その他 */
+
+// エリア・お問合わせ
+@use "components/other/areas/contact-area";

@@ -1,0 +1,30 @@
+// ベース
+
+
+// 変数、ミックスイン、関数
+@use "../global" as g;
+
+
+
+
+// リセットCSS・リセットスタイルシート
+@use "./reset.scss";
+
+
+
+
+body {
+  color: g.$textColor;
+  font-family: g.$NotoSans;
+  line-height: 1.5;
+}
+
+a {
+  color: g.$mainColor;
+  transition: color .3s;
+
+  @include g.hover {
+    color: g.$lightMainColor;
+    text-decoration-line: none;
+  }
+}
