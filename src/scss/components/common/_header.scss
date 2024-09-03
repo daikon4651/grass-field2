@@ -1,0 +1,42 @@
+// 共通・ヘッダー
+
+
+// 変数、ミックスイン、関数
+@use "../../global/" as g;
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background-color: g.$whiteColor;
+  box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__siteName {
+    margin-left: 20px;
+  }
+
+  &__logo {
+    width: 105px;
+    height: 23px;
+  }
+
+
+  @media (width >= 992px) {
+    height: 100px;
+
+    &__siteName {
+      margin-left: 50px;
+    }
+
+    &__logo {
+      width: 210px;
+      height: 45px;
+    }
+  }
+}

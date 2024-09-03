@@ -10,12 +10,23 @@
   color: g.$whiteColor;
   text-align: center;
 
+  &__heading {
+
+    + * {
+      margin-top: 40px;
+    }
+  }
+
   &__text {
     @include g.rem-fz(14);
   }
 
+  &__btn {
+    margin-top: 40px;
+  }
+
   &__tel {
-    display: block;
+    margin-top: 20px;
     font-family: g.$Oswald;
     @include g.rem-fz(24);
     font-weight: 500;
@@ -25,6 +36,23 @@
       color: g.$whiteColor;
       @include g.rem-fz(40);
       text-decoration-line: none;
+    }
+  }
+
+
+  @media (width >= 768px) {
+    padding: 80px 20px;
+
+    &__text {
+      @include g.rem-fz(16);
+    }
+
+    &__tel {
+      @include g.rem-fz(30);
+
+      &Num {
+        @include g.rem-fz(48);
+      }
     }
   }
 }

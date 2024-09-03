@@ -13,15 +13,30 @@
 
 
 
+/* レイアウト */
+@use "layouts/layouts";
+
+
+
+
 /* コンポーネント・パーツ */
 
 // 見出し
 @use "./components/parts/_headings";
 
+// ボタン
+@use "./components/parts/_buttons.scss";
+
 
 
 
 /* コンポーネント・共通 */
+
+// ヘッダー
+@use "components/common/header";
+
+// グローバルナビゲーション
+@use "components/common/gnav.scss";
 
 // フッター
 @use "components/common/_footer";
@@ -31,5 +46,31 @@
 
 /* コンポーネント・その他 */
 
+// メインコンテンツ
+@use "./components/other/mains/main";
+
+// セクション・トップページ
+@use "components/other/sections/top-section";
+
+// ヒーローイメージ・トップページ
+@use "components/other/heroes/top-hero";
+
 // エリア・お問合わせ
 @use "components/other/areas/contact-area";
+
+// カード・サービス
+@use "./components/other/cards/service-card";
+// カード・商品
+@use "components/other/cards/_product-card.scss";
+
+
+
+
+/* Utilityクラス・ユーティリティクラス・汎用クラス・ヘルパークラス */
+@use "./utilities/utilities";
+
+
+
+.test1 {
+  // color: yellow;
+}

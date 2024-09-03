@@ -7,9 +7,9 @@ import '../scss/style.scss';
 // jQuery
 // import $ from 'jquery';
 
-// $('.contactArea').css(
+// $('.test15').css(
 //   {
-//     color: 'green',
+//     color: 'gold',
 //     fontSize: 32,
 //     'font-weight': 'bold',
 //     marginTop: '100px'

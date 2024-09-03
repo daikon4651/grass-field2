@@ -1,0 +1,69 @@
+// セクション・トップページ
+
+
+// 変数、ミックスイン、関数
+@use "../../../global" as g;
+
+
+.topSection {
+
+  &__heading {
+    font-family: g.$Oswald;
+    @include g.rem-fz(28);
+    font-weight: 500;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.2em;
+  }
+
+  &__serviceCards {
+    max-width: 400px;
+    margin-top: 20px;
+    margin-inline: auto;
+  }
+
+  &__productCards {
+    margin-top: 20px;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  & + & {
+    margin-top: 50px;
+  }
+
+
+  @media (width >= 568px), print {
+
+    &__serviceCards {
+      max-width: none;
+    }
+  }
+
+
+  @media (width >= 768px), print {
+
+    &__heading {
+      @include g.rem-fz(48);
+    }
+
+    &__serviceCards {
+      margin-top: 40px;
+    }
+
+    &__productCards {
+      margin-top: 40px;
+    }
+
+    &__btn {
+      margin-top: 60px;
+    }
+
+    & + & {
+      margin-top: 80px;
+    }
+  }
+}

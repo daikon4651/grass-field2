@@ -1,0 +1,21 @@
+// メインコンテンツ
+
+
+// 変数、ミックスイン、関数
+@use "../../../global" as g;
+
+
+.main {
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+
+  @media (width >= 768px) {
+    padding-bottom: 80px;
+  }
+
+
+  @media (width >= 992px), print {
+    margin-top: 100px;
+  }
+}

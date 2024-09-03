@@ -7,6 +7,9 @@
 
 <body class="top">
 
+<%- include('./components/common/_header', { elementName: 'h1'}) %>
+
+
 <main class="main">
 
   <div class="topHero">
@@ -25,16 +28,16 @@
   </div><!-- /.topHero -->
 
 
-  <div class="l-cintainer">
+  <div class="l-container">
 
     <section class="topSection">
       <h2 class="topSection__heading">Service</h2>
 
-      <div class="topSection__cards l-col-pc3">
+      <div class="topSection__serviceCards l-col-pc3">
         <article class="serviceCard">
           <a class="serviceCard__link" href="#">
             <div class="serviceCard__body">
-              <h3 class="sereviceCard__heading">サービス名1</h3>
+              <h3 class="serviceCard__heading">サービス名1</h3>
 
               <p class="serviceCard__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
@@ -50,7 +53,7 @@
         <article class="serviceCard">
           <a class="serviceCard__link" href="#">
             <div class="serviceCard__body">
-              <h3 class="sereviceCard__heading">サービス名2</h3>
+              <h3 class="serviceCard__heading">サービス名2</h3>
 
               <p class="serviceCard__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
@@ -66,7 +69,7 @@
         <article class="serviceCard">
           <a class="serviceCard__link" href="#">
             <div class="serviceCard__body">
-              <h3 class="sereviceCard__heading">サービス名3</h3>
+              <h3 class="serviceCard__heading">サービス名3</h3>
 
               <p class="serviceCard__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
@@ -87,11 +90,11 @@
     <section class="topSection">
       <h2 class="topSection__heading">Pick Up</h2>
 
-      <div class="topSection__cards l-col-pc4">
+      <div class="topSection__productCards l-col-pc4">
         <article class="productCard">
           <a class="productCard__link" href="#">
             <p class="productCard__title">
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>商品タイトル
+              <i class="productCard__titleIcon fa-solid fa-chevron-right" aria-hidden="true"></i>商品タイトル
             </p>
 
             <figure class="productCard__figure">
@@ -103,7 +106,7 @@
         <article class="productCard">
           <a class="productCard__link" href="#">
             <p class="productCard__title">
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>商品タイトル
+              <i class="productCard__titleIcon fa-solid fa-chevron-right" aria-hidden="true"></i>商品タイトル
             </p>
 
             <figure class="productCard__figure">
@@ -115,7 +118,7 @@
         <article class="productCard">
           <a class="productCard__link" href="#">
             <p class="productCard__title">
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>長い商品タイトルタイトル最大30文字までありえます
+              <i class="productCard__titleIcon fa-solid fa-chevron-right" aria-hidden="true"></i>長い商品タイトルタイトル最大30文字までありえます
             </p>
 
             <figure class="productCard__figure">
@@ -127,7 +130,7 @@
         <article class="productCard">
           <a class="productCard__link" href="#">
             <p class="productCard__title">
-              <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>商品タイトル
+              <i class="productCard__titleIcon fa-solid fa-chevron-right" aria-hidden="true"></i>商品タイトル
             </p>
 
             <figure class="productCard__figure">
@@ -144,6 +147,9 @@
   </div><!-- /.l-container -->
 
 </main>
+
+
+<div class="test15">test15</div>
 
 
 <%- include('./components/other/_contact') %>
