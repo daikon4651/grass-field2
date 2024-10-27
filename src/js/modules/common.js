@@ -1,8 +1,8 @@
 // 共通
 
 
-// const lv2Heading = document.querySelector('.lv2Heading');
-// lv2Heading.style.color = 'red';
+// const test2 = document.querySelector('.test2');
+// test2.style.color = 'green';
 
 
 
@@ -10,17 +10,22 @@
 // jQuery
 // import $ from 'jquery';
 
-// $('.lv2Heading').css('color', 'plum');
+// $('.test2').css('color', 'red');
 
 
 
+
+// ES Modules
+
+// 変数
+// const color = 'red';
 
 // 関数（あいさつ）
 // const greet = (name) => {
-//   console.log(`ありがとう。${name}さん。`);
+//   console.log(`おはよう。${name}さん。`);
 // };
 
-// export { greet };
+// export { color, greet };
 
 
 
@@ -58,4 +63,23 @@ minWidth992.addEventListener('change', (e) => {
   if (e.matches) {
     gNav.style.height = null;
   }
+}, false);
+
+
+
+
+// 入力内容の確認するボタンのオンオフ
+const privacyCheckbox = document.querySelector('.contactForm__checkbox');
+
+const privacyCheckboxLabel = document.querySelector('.contactForm__checkboxLabel');
+
+const privacyCheckboxLabelText = document.querySelector('.contactForm__checkboxLabelText');
+
+const confirmBtn = document.querySelector('.contactForm__confirmBtn');
+
+
+privacyCheckbox.addEventListener('click', function(e) {
+  console.log(privacyCheckbox.checked);
+
+  confirmBtn.disabled = !privacyCheckbox.checked;
 }, false);

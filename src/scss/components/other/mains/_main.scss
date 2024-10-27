@@ -7,12 +7,6 @@
 
 .main {
   margin-top: 50px;
-  padding-bottom: 50px;
-
-
-  @media (width >= 768px) {
-    padding-bottom: 80px;
-  }
 
 
   @media (width >= 992px), print {

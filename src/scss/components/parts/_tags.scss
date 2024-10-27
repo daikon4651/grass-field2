@@ -1,0 +1,18 @@
+// タグ
+
+
+// 変数、ミックスイン、関数
+@use "../../global/" as g;
+
+
+
+.tag {
+  display: inline-block;
+  padding-inline: 10px;
+  color: g.$whiteColor;
+  @include g.rem-fz(12);
+
+  &._require {
+    background-color: g.$mainColor;
+  }
+}

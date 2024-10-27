@@ -1,0 +1,165 @@
+// 縦並び / 横並び の切り替え・サービス
+
+
+// 変数、ミックスイン、関数
+@use "../../../global" as g;
+
+
+
+.serviceAlternates {
+  margin-inline: calc(50% - 50vw);
+  padding-bottom: 80px;
+  background-color: #F6FCF5;
+
+
+  @media (width >= 768px) {
+    padding-inline: calc(50vw - 50%);
+    padding-bottom: 200px;
+    background-color: transparent;
+    background-image: linear-gradient(
+      #fff 140px,
+      #F6FCF5 140px
+    );
+  }
+}
+
+
+
+.serviceAlternate {
+  position: relative;
+  z-index: 1;
+
+  & + & {
+    margin-top: -10px;
+  }
+
+  &__body {
+    margin-inline: 27.5px;
+    padding: 40px 20px;
+    border: solid 1px g.$mainColor;
+    background-color: g.$whiteColor;
+  }
+
+  &__heading {
+    margin-bottom: 25px;
+    font-weight: bold;
+    display: grid;
+
+    &Main {
+      @include g.rem-fz(20);
+    }
+
+    &Sub {
+      order: -1;
+      color: g.$mainColor;
+    }
+  }
+
+  &__text {
+    margin-top: 1em;
+    @include g.rem-fz(14);
+    line-height: 2;
+  }
+
+  &__list {
+    margin-top: 30px;
+
+    &Image {
+      width: 100%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+
+  @media (width >= 768px) {
+
+    // CSSグリッド
+    display: grid;
+    grid-template-columns:
+      1fr 1fr;
+
+    &__body {
+      z-index: 1;
+      margin-inline: 0 -32%;
+      margin-top: 70px;
+      padding: 40px;
+
+      .serviceAlternate._reverse & {
+        margin-inline: -32% 0;
+      }
+    }
+
+    &__figure {
+      height: 500px;
+      margin-inline: 0 calc(100% - 50vw);
+
+      .serviceAlternate._reverse & {
+        order: -1;
+        margin-inline: calc(100% - 50vw) 0;
+      }
+    }
+
+
+
+    // Flexbox
+    // display: flex;
+
+    // &._reverse {
+    //   flex-direction: row-reverse;
+    // }
+
+    // &__body {
+    //   z-index: 1;
+    //   margin-top: 70px;
+    //   margin-inline: 0 -16%;
+    //   width: 66%;
+    //   padding: 40px;
+
+    //   .serviceAlternate._reverse > & {
+    //     margin-inline: -16% 0;
+    //   }
+    // }
+
+    // &__figure {
+    //   // flex-shrink: 0;
+    //   margin-inline: 0 calc(50% - 50vw);
+    //   width: 50vw;
+    //   height: 500px;
+
+    //   .serviceAlternate._reverse > & {
+    //     margin-inline: calc(50% - 50vw) 0;
+    //   }
+    // }
+
+
+
+    & + & {
+      margin-top: 50px;
+    }
+
+
+    &__heading {
+
+      &Main {
+        @include g.rem-fz(28);
+      }
+
+      &Sub {
+        @include g.rem-fz(20);
+      }
+    }
+
+    &__text {
+      @include g.rem-fz(16);
+    }
+
+    &__image {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}

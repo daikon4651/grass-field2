@@ -1,0 +1,53 @@
+// 共通・ページネーション
+
+
+@use "../../global/index";
+
+
+
+.breadcrumb {
+  display: none;
+  padding: 15px 50px;
+  background: #eee;
+
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 5px;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__item {
+    @include index.rem-fz(12);
+
+    &:not(:first-child) {
+      display: grid;
+      grid-auto-flow: column;
+      column-gap: 5px;
+      align-items: center;
+
+      &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-top: solid 1px;
+        border-right: solid 1px;
+        rotate: 45deg;
+      }
+    }
+  }
+
+  &__link {
+
+    .breadcrumb__item:last-child > & {
+      color: inherit;
+      text-decoration-line: none;
+    }
+  }
+
+
+  @media (width >= 768px) {
+    display: block;
+  }
+}

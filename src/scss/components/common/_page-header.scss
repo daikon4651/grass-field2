@@ -1,0 +1,71 @@
+// 共通  ページ・ヘッダー
+
+
+// 変数、ミックスイン、関数
+@use "../../global/" as g;
+
+
+
+.pageHeader {
+  padding-inline: 20px;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+  text-align: center;
+
+  &._lg {
+    height: calc(200 / 375 * 100vw);
+  }
+
+  &._md {
+    padding: 80px 20px;
+  }
+
+  &._service {
+    background-image: url(../images/service/bg_header_service.jpg);
+  }
+
+  &._contact {
+    background-color: g.$baseColor;
+  }
+
+  &__heading {
+
+    + * {
+      margin-block-start: 40px;
+    }
+  }
+
+  + * {
+    margin-top: 50px;
+  }
+
+
+  @media (width >= 768px) {
+    &._lg {
+      height: 400px;
+      padding-inline: 50px;
+    }
+
+    &._md {
+      padding: 100px 20px;
+    }
+
+    &._service {
+      justify-content: start;
+      text-align: start;
+    }
+
+    &__heading {
+
+      + * {
+        margin-top: 50px;
+      }
+    }
+
+    + * {
+      margin-top: 80px;
+    }
+  }
+}

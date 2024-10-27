@@ -19,6 +19,7 @@ module.exports = merge(commonConfig, {
     watchFiles: ['./src/**/*'],
   },
   // watch: true,
+  // serveコマンドを実行した場合は、監視モードがデフォルトで有効になっているので、watch は削って良い。
   devtool: 'source-map',
   module: {
     rules: [

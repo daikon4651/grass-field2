@@ -15,6 +15,7 @@
   border: solid 2px g.$mainColor;
   background-color: g.$whiteColor;
   color: g.$textColor;
+  font-family: inherit;
   @include g.rem-fz(18);
   font-weight: bold;
   line-height: 1;
@@ -24,13 +25,13 @@
   cursor: pointer;
   transition: all .3s;
 
+  &__icon {
+    margin-right: 5px;
+  }
+
   @include g.hover-focus {
     background-color: g.$baseColor;
     color: g.$textColor;
-  }
-
-  &__icon {
-    margin-right: 5px;
   }
 
   &._center {
@@ -38,12 +39,29 @@
   }
 
   &._white {
-    background-color: transparent;
     border-color: g.$whiteColor;
+    background-color: transparent;
     color: g.$whiteColor;
 
     @include g.hover-focus {
       background-color: rgb(255 255 255 / 30%);
     }
+  }
+
+  &._accent {
+    border-color: g.$accentColor;
+    background-color: g.$accentColor;
+    color: g.$whiteColor;
+
+    @include g.hover-focus {
+      opacity: .7;
+    }
+  }
+
+  &:disabled {
+    border-color: transparent;
+    background-color: #ccc;
+    color: g.$whiteColor;
+    cursor: default;
   }
 }

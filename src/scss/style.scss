@@ -27,6 +27,9 @@
 // ボタン
 @use "./components/parts/_buttons.scss";
 
+// タグ
+@use "components/parts/_tags";
+
 
 
 
@@ -41,6 +44,14 @@
 // フッター
 @use "components/common/_footer";
 
+// ページネーション
+@use "components/common/breadcrumb";
+
+// ページ・ヘッダー
+@use "./components/common/_page-header";
+// ページ・イントロダクション
+@use "./components/common/_page-intro";
+
 
 
 
@@ -51,6 +62,8 @@
 
 // セクション・トップページ
 @use "components/other/sections/top-section";
+// セクション・お問合わせ
+@use "./components/other/sections/_contact-section.scss";
 
 // ヒーローイメージ・トップページ
 @use "components/other/heroes/top-hero";
@@ -63,14 +76,14 @@
 // カード・商品
 @use "components/other/cards/_product-card.scss";
 
+// 縦並び/横並びの切り替え・サービス
+@use "./components/other/alternates/_service-alternate";
+
+// フォーム・お問合わせ
+@use "./components/other/forms/contact-form";
+
 
 
 
 /* Utilityクラス・ユーティリティクラス・汎用クラス・ヘルパークラス */
 @use "./utilities/utilities";
-
-
-
-.test1 {
-  // color: yellow;
-}

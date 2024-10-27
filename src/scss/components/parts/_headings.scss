@@ -4,6 +4,45 @@
 @use "../../global" as g;
 
 
+
+// Level1
+.lv1Heading {
+  font-weight: bold;
+  line-height: 1.5;
+  display: grid;
+
+  &__ja {
+    margin-left: 0.2em;
+    @include g.rem-fz(30);
+    letter-spacing: .2em;
+  }
+
+  &__en {
+    order: -1;
+    margin-left: 0.2em;
+    color: g.$mainColor;
+    font-family: g.$Oswald;
+    @include g.rem-fz(20);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+
+
+  @media (width >= 768px) {
+
+    &__ja {
+      @include g.rem-fz(48);
+    }
+
+    &__en {
+      @include g.rem-fz(24);
+    }
+  }
+}
+
+
+
+
 // Level2
 .lv2Heading {
   @include g.rem-fz(24);
