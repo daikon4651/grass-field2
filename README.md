@@ -71,7 +71,6 @@ ___em、strong  強調、強勢。非常に重要、深刻、緊急、重大、�
 # 見出し1
 見出し1
 =
-
 ## 見出し2
 見出し2
 -
@@ -151,7 +150,7 @@ const test = document.querySelector('.test');
 
 引用文
 
-グレーターザン
+グレーター ザン
 greater than
 
 
@@ -330,7 +329,7 @@ https://example.com
 
 |見出し11111111|見出し22222222|見出し3333333||
 |:-|:-:|-:|-|
-|a|b|c|
+|1|2|3|
 |__strong__|strong|
 |text|<b>text</b>|<em>text</em>|text<br>text|
 ||||
@@ -364,8 +363,8 @@ Issue番号
 
 
 
-@アカウント名
 @ユーザー名
+@アカウント名
 
 @組織名
 
