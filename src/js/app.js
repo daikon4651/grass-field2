@@ -24,8 +24,16 @@ import './modules/common';
 
 
 // ES Modules
-// import { color, greet } from './modules/common';
+// import { text1, greet } from './modules/common';
 
-// console.log(color);
+// const test = document.querySelector('.test');
+// test.textContent = text1;
 
-// greet('東');
+// greet('鈴木');
+
+
+
+// import text2 from './modules/common.js';
+
+// const test = document.querySelector('.test');
+// test.innerText = text2;

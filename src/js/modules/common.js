@@ -1,16 +1,17 @@
 // 共通
 
 
-// const test2 = document.querySelector('.test2');
-// test2.style.color = 'green';
+// const test = document.querySelector('.test');
+// test.style.color = 'green';
 
 
 
 
 // jQuery
+
 // import $ from 'jquery';
 
-// $('.test2').css('color', 'red');
+// $('.test').css('color', 'red');
 
 
 
@@ -18,14 +19,22 @@
 // ES Modules
 
 // 変数
-// const color = 'red';
+// export const text1 = 'おはよう。';
+
 
 // 関数（あいさつ）
-// const greet = (name) => {
+// export const greet = (name) => {
 //   console.log(`おはよう。${name}さん。`);
 // };
 
-// export { color, greet };
+
+// export { text1, greet };
+
+
+
+// const text2 = 'こんにちは。';
+
+// export default text2;
 
 
 
