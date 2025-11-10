@@ -48,6 +48,10 @@ $Oswald: "Oswald", sans-serif;
 
 
 // ブレイクポイント・ブレークポイント
+
+// 左側の ' は、なくても OK。
+// 右側の ' は、必須。
+
 $breakpoints: (
   'xs-min': '(min-width: 375px), print',
   'xs-max': '(max-width: 374px), print',
